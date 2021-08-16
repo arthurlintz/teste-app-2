@@ -6,9 +6,9 @@ const fs = require('fs')
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/index.html'))
-    fs.appendFile("visit.json",JSON.stringify(visit), function (err) {
-        if (err) return console.log(err);
-      });
+    //fs.appendFile("visit.json",JSON.stringify(visit), function (err) {
+        //if (err) return console.log(err);
+     // });//
 })
 
 // Parse URL-encoded bodies (as sent by HTML forms)
